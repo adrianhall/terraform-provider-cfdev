@@ -1,5 +1,5 @@
 // Copyright 2026 Adrian Hall
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: MIT
 
 // Package provider implements the cfdev Terraform provider.
 package provider

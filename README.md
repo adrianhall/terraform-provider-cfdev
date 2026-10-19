@@ -36,4 +36,4 @@ are intentionally not applicable until a resource and an example configuration e
 
 ## License
 
-This project is licensed under the [Mozilla Public License 2.0](LICENSE).
+This project is licensed under the [MIT License](LICENSE).

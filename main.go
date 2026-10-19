@@ -1,5 +1,5 @@
 // Copyright 2026 Adrian Hall
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: MIT
 
 package main
 
