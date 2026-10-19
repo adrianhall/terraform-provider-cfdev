@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+
+# Go
+/bin/
+coverage.out
+coverage.html
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
