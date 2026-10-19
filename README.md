@@ -29,10 +29,25 @@ go test -coverprofile=coverage.out ./...
 go tool cover -func=coverage.out
 ```
 
-The initial provider has no configurable arguments or managed resources. D1 migration
-support will be added in subsequent releases. This foundation's provider package is
-covered by unit tests; networked acceptance tests and Terraform configuration validation
-are intentionally not applicable until a resource and an example configuration exist.
+## Configuration
+
+```hcl
+provider "cfdev" {
+  # Prefer CLOUDFLARE_API_TOKEN in the environment instead of committing a token.
+  cloudflare_api_token = var.cloudflare_api_token
+
+  # Optional; defaults to https://api.cloudflare.com/client/v4.
+  # cloudflare_api_endpoint = "https://api.cloudflare.com/client/v4"
+}
+```
+
+`cloudflare_api_token` is sensitive and may instead be supplied through the
+`CLOUDFLARE_API_TOKEN` environment variable. `cloudflare_api_endpoint` supports
+compatible alternate Cloudflare API endpoints.
+
+The provider currently has no managed resources; D1 migration support will be added in
+subsequent releases. Networked acceptance tests and Terraform configuration validation
+remain intentionally inapplicable until a resource and example configuration exist.
 
 ## License
 
